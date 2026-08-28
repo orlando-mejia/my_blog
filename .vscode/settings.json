@@ -1,0 +1,28 @@
+{
+  // Focus the UI: Hide unnecessary clutter while writing
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "off",
+  "workbench.startupEditor": "none",
+
+  // Writing ergonomics for Markdown files
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.snippetSuggestions": "top",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // Hide build artifacts and system noise from the file explorer tree
+  "files.exclude": {
+    "**/.git": true,
+    "**/.ds_store": true,
+    "**/node_modules": true,
+    "**/public": true,
+    "**/.quartz-cache": true
+  }
+}
