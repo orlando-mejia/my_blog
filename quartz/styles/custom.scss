@@ -1,3 +1,8 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+/* Hide ONLY the date and reading time on pages with the hide-header class */
+.center:has(.hide-header) {
+  .content-meta {
+    display: none !important;
+  }
+}

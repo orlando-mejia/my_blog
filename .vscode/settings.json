@@ -2,7 +2,7 @@
   // Focus the UI: Hide unnecessary clutter while writing
   "editor.minimap.enabled": false,
   "editor.wordWrap": "on",
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   "workbench.startupEditor": "none",
 
   // Writing ergonomics for Markdown files
