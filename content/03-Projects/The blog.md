@@ -19,4 +19,18 @@ Once I figured out the main tool for building the static site locally and got us
 
 Porkbun showed up as the savior, a pretty simple organization that allows you to get your hands on domains without a lot of add ons. Simple and steady, finding something like that in the current times is no easy task. After some looking up, finding the *orlandomejia.me* as the most affordable and reasonable domain to buy. It seems like domains have a yearly fee of renewal if you want to keep them, for this one I have paid around 17 US upfront with no discount (pretty unlucky btw, being one of the few without first year discount).
 
+## The omnipresent (*github*)
 
+Of course, GitHub being part of the project is no surprise. Beyond the usual benefits, it played a key role here because I originally used it to host via GitHub Pages—even though I ultimately switched to a different hosting tool.
+
+## The builder (*Cloudfare*)
+
+The final piece of the puzzle was Cloudflare, which essentially handles everything related to web deployment. At first, I tried using it just as a DNS redirector to point my custom domain to the site I was hosting on GitHub Pages. After running into a few issues there, I ended up exploring Workers and Pages. Once I weighed the advantages and limitations of the free tier, I realized it was more than enough for my purposes.
+
+I'm still trying to wrap my head around how web deployment works and all the data Cloudflare displays on its dashboards. For the blog side, though, it was pretty easy to set up. Once you link your repository to Workers and Pages, you configure it just once, set a deploy command, and from then on, a few quick commands in your local terminal publish and deploy your updates straight to the live blog.
+
+## The final workflow.
+
+Once the infrastructure is set up with the tools I just described, the workflow is pretty straightforward. Having your own blog or digital garden is essentially a one-evening project. After building the foundation, you just open Obsidian, point a vault to your Quartz project's content directory, and write your entries. Run a few commands in your Git terminal, and that's it—DONE. (I'm guessing some troubleshooting will be needed down the road after updates and broken dependencies, but hopefully nothing too painful!)
+
+Note: Now that I've built this, it feels like an empty canvas waiting for my ideas. I know I won't always be consistent, but I'm pretty sure I'll keep coming back—because writing for my future self is something I truly enjoy.
